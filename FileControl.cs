@@ -38,7 +38,6 @@ namespace Graph {
       }
 
     }
-
     public void Load() {
       if(this.format == FileControl.TEXT_FROMAT) {
         loadText();

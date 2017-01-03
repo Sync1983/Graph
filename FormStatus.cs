@@ -14,13 +14,13 @@ namespace Graph {
     protected StatusViewer listner;
     public FormStatus(USBControl uctrl) {      
       this.usbControl = uctrl;
-      listner = new StatusViewer(this, uctrl);
-      listner.start();
+      listner = new StatusViewer(this, uctrl);      
       InitializeComponent();
+      //listner.start();
     }
 
     public void setUsbName( string name ) {      
-      if((name != null) && (this.USBName != null)) {
+      if((name != null) && (this.USBName != null) ) {
         this.BeginInvoke( (MethodInvoker) ( () => {
           USBName.Text = name;
         } ) );
@@ -76,6 +76,14 @@ namespace Graph {
 
     private void FormStatus_FormClosed( object sender, FormClosedEventArgs e ) {
       listner.stop();
+    }
+
+    private void FormStatus_VisibleChanged( object sender, EventArgs e ) {
+      if(this.Visible) {
+        listner.start();
+      } else {
+        listner.stop();
+      }
     }
   }
 }

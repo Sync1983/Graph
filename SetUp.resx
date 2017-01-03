@@ -117,32 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="eye_24x18" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\raster\blue\eye_24x18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="eye_32x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\raster\blue\eye_32x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pause_24x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\raster\cyan\pause_24x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="play_24x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\raster\cyan\play_24x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="upload_24x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\raster\blue\upload_24x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="reload_24x28" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\raster\cyan\reload_24x28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="stop_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\raster\cyan\stop_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="reload_18x21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\raster\cyan\reload_18x21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="minus_alt_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\raster\cyan\minus_alt_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

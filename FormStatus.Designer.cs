@@ -29,17 +29,6 @@
       this.Position = new System.Windows.Forms.Label();
       this.label1 = new System.Windows.Forms.Label();
       this.groupBox3 = new System.Windows.Forms.GroupBox();
-      this.groupBox4 = new System.Windows.Forms.GroupBox();
-      this.groupBox5 = new System.Windows.Forms.GroupBox();
-      this.lInit = new System.Windows.Forms.Label();
-      this.lWork = new System.Windows.Forms.Label();
-      this.lError = new System.Windows.Forms.Label();
-      this.lIn1 = new System.Windows.Forms.Label();
-      this.lIn2 = new System.Windows.Forms.Label();
-      this.lIn3 = new System.Windows.Forms.Label();
-      this.lIn4 = new System.Windows.Forms.Label();
-      this.lIn5 = new System.Windows.Forms.Label();
-      this.lIn6 = new System.Windows.Forms.Label();
       this.lRalay4 = new System.Windows.Forms.Label();
       this.lRalay3 = new System.Windows.Forms.Label();
       this.PosC = new System.Windows.Forms.Label();
@@ -50,7 +39,18 @@
       this.label4 = new System.Windows.Forms.Label();
       this.PosA = new System.Windows.Forms.Label();
       this.label2 = new System.Windows.Forms.Label();
+      this.groupBox4 = new System.Windows.Forms.GroupBox();
       this.lFull = new System.Windows.Forms.Label();
+      this.lError = new System.Windows.Forms.Label();
+      this.lWork = new System.Windows.Forms.Label();
+      this.lInit = new System.Windows.Forms.Label();
+      this.groupBox5 = new System.Windows.Forms.GroupBox();
+      this.lIn6 = new System.Windows.Forms.Label();
+      this.lIn5 = new System.Windows.Forms.Label();
+      this.lIn4 = new System.Windows.Forms.Label();
+      this.lIn3 = new System.Windows.Forms.Label();
+      this.lIn2 = new System.Windows.Forms.Label();
+      this.lIn1 = new System.Windows.Forms.Label();
       this.groupBox1.SuspendLayout();
       this.groupBox2.SuspendLayout();
       this.groupBox3.SuspendLayout();
@@ -131,135 +131,6 @@
       this.groupBox3.TabIndex = 2;
       this.groupBox3.TabStop = false;
       this.groupBox3.Text = "Текущие координаты";
-      // 
-      // groupBox4
-      // 
-      this.groupBox4.Controls.Add(this.lFull);
-      this.groupBox4.Controls.Add(this.lError);
-      this.groupBox4.Controls.Add(this.lWork);
-      this.groupBox4.Controls.Add(this.lInit);
-      this.groupBox4.Dock = System.Windows.Forms.DockStyle.Top;
-      this.groupBox4.Location = new System.Drawing.Point(0, 100);
-      this.groupBox4.Name = "groupBox4";
-      this.groupBox4.Size = new System.Drawing.Size(551, 43);
-      this.groupBox4.TabIndex = 3;
-      this.groupBox4.TabStop = false;
-      this.groupBox4.Text = "Состояние";
-      // 
-      // groupBox5
-      // 
-      this.groupBox5.Controls.Add(this.lIn6);
-      this.groupBox5.Controls.Add(this.lIn5);
-      this.groupBox5.Controls.Add(this.lIn4);
-      this.groupBox5.Controls.Add(this.lIn3);
-      this.groupBox5.Controls.Add(this.lIn2);
-      this.groupBox5.Controls.Add(this.lIn1);
-      this.groupBox5.Dock = System.Windows.Forms.DockStyle.Top;
-      this.groupBox5.Location = new System.Drawing.Point(0, 143);
-      this.groupBox5.Name = "groupBox5";
-      this.groupBox5.Size = new System.Drawing.Size(551, 41);
-      this.groupBox5.TabIndex = 4;
-      this.groupBox5.TabStop = false;
-      this.groupBox5.Text = "Сигналы датчиков";
-      // 
-      // lInit
-      // 
-      this.lInit.BackColor = System.Drawing.Color.Red;
-      this.lInit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-      this.lInit.Location = new System.Drawing.Point(195, 19);
-      this.lInit.Name = "lInit";
-      this.lInit.Size = new System.Drawing.Size(57, 16);
-      this.lInit.TabIndex = 0;
-      this.lInit.Text = "Иниц. ";
-      this.lInit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-      // 
-      // lWork
-      // 
-      this.lWork.BackColor = System.Drawing.Color.Red;
-      this.lWork.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-      this.lWork.Location = new System.Drawing.Point(132, 19);
-      this.lWork.Name = "lWork";
-      this.lWork.Size = new System.Drawing.Size(57, 16);
-      this.lWork.TabIndex = 1;
-      this.lWork.Text = "Работа";
-      this.lWork.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-      // 
-      // lError
-      // 
-      this.lError.BackColor = System.Drawing.Color.Red;
-      this.lError.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-      this.lError.Location = new System.Drawing.Point(69, 19);
-      this.lError.Name = "lError";
-      this.lError.Size = new System.Drawing.Size(57, 16);
-      this.lError.TabIndex = 2;
-      this.lError.Text = "Ошибка";
-      this.lError.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-      // 
-      // lIn1
-      // 
-      this.lIn1.AutoSize = true;
-      this.lIn1.BackColor = System.Drawing.Color.Red;
-      this.lIn1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-      this.lIn1.Location = new System.Drawing.Point(13, 16);
-      this.lIn1.Name = "lIn1";
-      this.lIn1.Size = new System.Drawing.Size(15, 15);
-      this.lIn1.TabIndex = 2;
-      this.lIn1.Text = "1";
-      // 
-      // lIn2
-      // 
-      this.lIn2.AutoSize = true;
-      this.lIn2.BackColor = System.Drawing.Color.Red;
-      this.lIn2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-      this.lIn2.Location = new System.Drawing.Point(34, 16);
-      this.lIn2.Name = "lIn2";
-      this.lIn2.Size = new System.Drawing.Size(15, 15);
-      this.lIn2.TabIndex = 3;
-      this.lIn2.Text = "2";
-      // 
-      // lIn3
-      // 
-      this.lIn3.AutoSize = true;
-      this.lIn3.BackColor = System.Drawing.Color.Red;
-      this.lIn3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-      this.lIn3.Location = new System.Drawing.Point(55, 16);
-      this.lIn3.Name = "lIn3";
-      this.lIn3.Size = new System.Drawing.Size(15, 15);
-      this.lIn3.TabIndex = 4;
-      this.lIn3.Text = "3";
-      // 
-      // lIn4
-      // 
-      this.lIn4.AutoSize = true;
-      this.lIn4.BackColor = System.Drawing.Color.Red;
-      this.lIn4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-      this.lIn4.Location = new System.Drawing.Point(76, 16);
-      this.lIn4.Name = "lIn4";
-      this.lIn4.Size = new System.Drawing.Size(15, 15);
-      this.lIn4.TabIndex = 5;
-      this.lIn4.Text = "4";
-      // 
-      // lIn5
-      // 
-      this.lIn5.AutoSize = true;
-      this.lIn5.BackColor = System.Drawing.Color.Red;
-      this.lIn5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-      this.lIn5.Location = new System.Drawing.Point(97, 16);
-      this.lIn5.Name = "lIn5";
-      this.lIn5.Size = new System.Drawing.Size(15, 15);
-      this.lIn5.TabIndex = 6;
-      this.lIn5.Text = "5";
-      // 
-      // lIn6
-      // 
-      this.lIn6.AutoSize = true;
-      this.lIn6.BackColor = System.Drawing.Color.Red;
-      this.lIn6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-      this.lIn6.Location = new System.Drawing.Point(118, 16);
-      this.lIn6.Name = "lIn6";
-      this.lIn6.Size = new System.Drawing.Size(15, 15);
-      this.lIn6.TabIndex = 7;
-      this.lIn6.Text = "6";
       // 
       // lRalay4
       // 
@@ -361,6 +232,20 @@
       this.label2.TabIndex = 6;
       this.label2.Text = "Координата A:";
       // 
+      // groupBox4
+      // 
+      this.groupBox4.Controls.Add(this.lFull);
+      this.groupBox4.Controls.Add(this.lError);
+      this.groupBox4.Controls.Add(this.lWork);
+      this.groupBox4.Controls.Add(this.lInit);
+      this.groupBox4.Dock = System.Windows.Forms.DockStyle.Top;
+      this.groupBox4.Location = new System.Drawing.Point(0, 100);
+      this.groupBox4.Name = "groupBox4";
+      this.groupBox4.Size = new System.Drawing.Size(551, 43);
+      this.groupBox4.TabIndex = 3;
+      this.groupBox4.TabStop = false;
+      this.groupBox4.Text = "Состояние";
+      // 
       // lFull
       // 
       this.lFull.BackColor = System.Drawing.Color.Red;
@@ -371,6 +256,121 @@
       this.lFull.TabIndex = 3;
       this.lFull.Text = "Буфер";
       this.lFull.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      // 
+      // lError
+      // 
+      this.lError.BackColor = System.Drawing.Color.Red;
+      this.lError.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+      this.lError.Location = new System.Drawing.Point(69, 19);
+      this.lError.Name = "lError";
+      this.lError.Size = new System.Drawing.Size(57, 16);
+      this.lError.TabIndex = 2;
+      this.lError.Text = "Ошибка";
+      this.lError.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      // 
+      // lWork
+      // 
+      this.lWork.BackColor = System.Drawing.Color.Red;
+      this.lWork.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+      this.lWork.Location = new System.Drawing.Point(132, 19);
+      this.lWork.Name = "lWork";
+      this.lWork.Size = new System.Drawing.Size(57, 16);
+      this.lWork.TabIndex = 1;
+      this.lWork.Text = "Работа";
+      this.lWork.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      // 
+      // lInit
+      // 
+      this.lInit.BackColor = System.Drawing.Color.Red;
+      this.lInit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+      this.lInit.Location = new System.Drawing.Point(195, 19);
+      this.lInit.Name = "lInit";
+      this.lInit.Size = new System.Drawing.Size(57, 16);
+      this.lInit.TabIndex = 0;
+      this.lInit.Text = "Иниц. ";
+      this.lInit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      // 
+      // groupBox5
+      // 
+      this.groupBox5.Controls.Add(this.lIn6);
+      this.groupBox5.Controls.Add(this.lIn5);
+      this.groupBox5.Controls.Add(this.lIn4);
+      this.groupBox5.Controls.Add(this.lIn3);
+      this.groupBox5.Controls.Add(this.lIn2);
+      this.groupBox5.Controls.Add(this.lIn1);
+      this.groupBox5.Dock = System.Windows.Forms.DockStyle.Top;
+      this.groupBox5.Location = new System.Drawing.Point(0, 143);
+      this.groupBox5.Name = "groupBox5";
+      this.groupBox5.Size = new System.Drawing.Size(551, 41);
+      this.groupBox5.TabIndex = 4;
+      this.groupBox5.TabStop = false;
+      this.groupBox5.Text = "Сигналы датчиков";
+      // 
+      // lIn6
+      // 
+      this.lIn6.AutoSize = true;
+      this.lIn6.BackColor = System.Drawing.Color.Red;
+      this.lIn6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+      this.lIn6.Location = new System.Drawing.Point(118, 16);
+      this.lIn6.Name = "lIn6";
+      this.lIn6.Size = new System.Drawing.Size(15, 15);
+      this.lIn6.TabIndex = 7;
+      this.lIn6.Text = "6";
+      // 
+      // lIn5
+      // 
+      this.lIn5.AutoSize = true;
+      this.lIn5.BackColor = System.Drawing.Color.Red;
+      this.lIn5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+      this.lIn5.Location = new System.Drawing.Point(97, 16);
+      this.lIn5.Name = "lIn5";
+      this.lIn5.Size = new System.Drawing.Size(15, 15);
+      this.lIn5.TabIndex = 6;
+      this.lIn5.Text = "5";
+      // 
+      // lIn4
+      // 
+      this.lIn4.AutoSize = true;
+      this.lIn4.BackColor = System.Drawing.Color.Red;
+      this.lIn4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+      this.lIn4.Location = new System.Drawing.Point(76, 16);
+      this.lIn4.Name = "lIn4";
+      this.lIn4.Size = new System.Drawing.Size(15, 15);
+      this.lIn4.TabIndex = 5;
+      this.lIn4.Text = "4";
+      // 
+      // lIn3
+      // 
+      this.lIn3.AutoSize = true;
+      this.lIn3.BackColor = System.Drawing.Color.Red;
+      this.lIn3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+      this.lIn3.Location = new System.Drawing.Point(55, 16);
+      this.lIn3.Name = "lIn3";
+      this.lIn3.Size = new System.Drawing.Size(15, 15);
+      this.lIn3.TabIndex = 4;
+      this.lIn3.Text = "3";
+      // 
+      // lIn2
+      // 
+      this.lIn2.AutoSize = true;
+      this.lIn2.BackColor = System.Drawing.Color.Red;
+      this.lIn2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+      this.lIn2.Location = new System.Drawing.Point(34, 16);
+      this.lIn2.Name = "lIn2";
+      this.lIn2.Size = new System.Drawing.Size(15, 15);
+      this.lIn2.TabIndex = 3;
+      this.lIn2.Text = "2";
+      // 
+      // lIn1
+      // 
+      this.lIn1.AutoSize = true;
+      this.lIn1.BackColor = System.Drawing.Color.Red;
+      this.lIn1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+      this.lIn1.Location = new System.Drawing.Point(13, 16);
+      this.lIn1.Name = "lIn1";
+      this.lIn1.Size = new System.Drawing.Size(15, 15);
+      this.lIn1.TabIndex = 2;
+      this.lIn1.Text = "1";
       // 
       // FormStatus
       // 
@@ -385,6 +385,7 @@
       this.Name = "FormStatus";
       this.Text = "Статус устройства";
       this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormStatus_FormClosed);
+      this.VisibleChanged += new System.EventHandler(this.FormStatus_VisibleChanged);
       this.groupBox1.ResumeLayout(false);
       this.groupBox1.PerformLayout();
       this.groupBox2.ResumeLayout(false);

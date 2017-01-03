@@ -16,6 +16,8 @@ namespace Graph {
     protected GraphView graph;
     protected volatile USBControl usbControl;
     protected FormStatus fs;
+    protected SetUp setup;
+    protected DataSender dataSender;
     protected UInt32 frame = 0;
 
     public int startPosititon = 0;
@@ -31,7 +33,22 @@ namespace Graph {
       usbControl.initUsbDrv();
       USBName.Text = usbControl.name;
       fs = new FormStatus( usbControl );
-      fs.Show();
+      fs.Show( this );
+      setup = new SetUp( usbControl );
+      setup.Show( this );
+    }
+    private void Load( string fileName ) {
+      file = new FileControl( fileName );
+      file.Load();
+      graph.Data = file.Data;
+      if(dataSender != null) {
+        dataSender.stop();
+      }
+
+      PositionBar.Maximum = (int) file.Length;
+      PositionBar.Value = PositionBar.Minimum = 0;
+      dataSender = new DataSender( usbControl, file );
+      usbControl.sendPosition( 0 );
     }
 
     private void OpenFileMenuItem_Click( object sender, EventArgs e ) {
@@ -41,22 +58,11 @@ namespace Graph {
         return;
       }
       Debug.WriteLine( dialog.FileName );
-      file = new FileControl( dialog.FileName );
-      file.Load();
-
-      graph.Data = file.Data;
+      this.Load( dialog.FileName );      
     }
-
-    private void reDrawButton_Click( object sender, EventArgs e ) {
-      graph.ReDraw();
-    }
-
+    
     private void LoadButton_Click( object sender, EventArgs e ) {
-      file = new FileControl( "D:\\Privod\\по контроллеру\\прописание дорожек\\В плену у тьмы.pr2" );
-      file.Load();
-      graph.Data = file.Data;
-      PositionBar.Maximum = (int) file.Length;
-      PositionBar.Value = PositionBar.Minimum = 0;
+      this.Load( "D:\\Privod\\по контроллеру\\прописание дорожек\\В плену у тьмы.pr2" );
     }
 
     private void PositionBar_ValueChanged( object sender, EventArgs e ) {
@@ -66,26 +72,16 @@ namespace Graph {
     }
 
     private void MainForm_FormClosed( object sender, FormClosedEventArgs e ) {
+      dataSender.stop();
       fs.Close();
       usbControl.freeUsbDrv();      
     }
 
     private void startBtn_Click( object sender, EventArgs e ) {
-      //usbControl.setStatus( new DEVICE_STATUS() );
-      DEVICE_POINT dp = new DEVICE_POINT();
-      int clk = 1000;
-      while(clk > 0) {
-        var data = file.Data[(int) frame];
-        dp.posX = (short) data.X;
-        dp.posY = (short) data.Y;
-        dp.posZ = (short) data.Z;
-        dp.coils = data.Relay;
-        bool result = usbControl.sendPoint( dp );
-        if(result) {
-          frame++;
-          clk--;
-        }
+      if(dataSender == null) {
+        return;
       }
+      dataSender.start();
     }
 
     private void btnStatus_Click( object sender, EventArgs e ) {
@@ -100,6 +96,10 @@ namespace Graph {
       usbControl.freeUsbDrv();
       usbControl.initUsbDrv();
       USBName.Text = usbControl.name;
+    }
+
+    private void toolStripButton1_Click( object sender, EventArgs e ) {
+      usbControl.flushFault();
     }
   }
 }

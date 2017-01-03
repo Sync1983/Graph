@@ -21,7 +21,7 @@ namespace Graph {
       stFrom.setCurrentPosition( status.point.posX, status.point.posY, status.point.posZ, status.point.coils );
       stFrom.setInputs( status.inputs );
       stFrom.setStatus( status.status );
-      Thread.Sleep( 500 );
+      Thread.Sleep( 250 );
     }
   }
 }

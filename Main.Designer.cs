@@ -48,10 +48,10 @@
       this.параметрыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
       this.NotificationIcon = new System.Windows.Forms.NotifyIcon(this.components);
       this.ToolBar = new System.Windows.Forms.ToolStrip();
+      this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
       this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
       this.PositionBar = new System.Windows.Forms.HScrollBar();
       this.OpenFileDialog = new System.Windows.Forms.OpenFileDialog();
-      this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
       this.LoadButton = new System.Windows.Forms.ToolStripButton();
       this.startBtn = new System.Windows.Forms.ToolStripButton();
       this.pauseBtn = new System.Windows.Forms.ToolStripButton();
@@ -59,6 +59,7 @@
       this.btnStatus = new System.Windows.Forms.ToolStripButton();
       this.btnUpload = new System.Windows.Forms.ToolStripButton();
       this.reInitUsb = new System.Windows.Forms.ToolStripButton();
+      this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
       this.создатьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
       this.OpenFileMenuItem = new System.Windows.Forms.ToolStripMenuItem();
       this.сохранитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -223,9 +224,15 @@
             this.toolStripSeparator5,
             this.btnStatus,
             this.btnUpload,
-            this.reInitUsb});
+            this.reInitUsb,
+            this.toolStripButton1});
       resources.ApplyResources(this.ToolBar, "ToolBar");
       this.ToolBar.Name = "ToolBar";
+      // 
+      // toolStripSeparator5
+      // 
+      this.toolStripSeparator5.Name = "toolStripSeparator5";
+      resources.ApplyResources(this.toolStripSeparator5, "toolStripSeparator5");
       // 
       // PositionBar
       // 
@@ -238,11 +245,6 @@
       this.OpenFileDialog.DefaultExt = "*.pr2";
       this.OpenFileDialog.FileName = "openFileDialog";
       resources.ApplyResources(this.OpenFileDialog, "OpenFileDialog");
-      // 
-      // toolStripSeparator5
-      // 
-      this.toolStripSeparator5.Name = "toolStripSeparator5";
-      resources.ApplyResources(this.toolStripSeparator5, "toolStripSeparator5");
       // 
       // LoadButton
       // 
@@ -295,6 +297,14 @@
       resources.ApplyResources(this.reInitUsb, "reInitUsb");
       this.reInitUsb.Name = "reInitUsb";
       this.reInitUsb.Click += new System.EventHandler(this.reInitUsb_Click);
+      // 
+      // toolStripButton1
+      // 
+      this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+      this.toolStripButton1.Image = global::Graph.Properties.Resources.minus_alt_32x32;
+      resources.ApplyResources(this.toolStripButton1, "toolStripButton1");
+      this.toolStripButton1.Name = "toolStripButton1";
+      this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
       // 
       // создатьToolStripMenuItem
       // 
@@ -397,6 +407,7 @@
     private System.Windows.Forms.ToolStripButton btnStatus;
     private System.Windows.Forms.ToolStripButton btnUpload;
     private System.Windows.Forms.ToolStripButton reInitUsb;
+    private System.Windows.Forms.ToolStripButton toolStripButton1;
   }
 }
 

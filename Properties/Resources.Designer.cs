@@ -83,6 +83,16 @@ namespace Graph.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap minus_alt_32x32 {
+            get {
+                object obj = ResourceManager.GetObject("minus_alt_32x32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pause_24x32 {
             get {
                 object obj = ResourceManager.GetObject("pause_24x32", resourceCulture);

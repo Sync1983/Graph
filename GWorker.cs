@@ -14,6 +14,9 @@ namespace Graph {
       this.th = new Thread( this.Doing );
     }
     public void start() {
+      if(_canWork) {
+        return;
+      }
       _canWork = true;
       th.Start();
     }    
